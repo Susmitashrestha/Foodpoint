@@ -1,0 +1,84 @@
+body
+
+.head{
+	color:#6a8269;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+}
+.navigation{
+	color:#48f442;
+}
+.text{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size:2rem;
+	color:#232526;
+}
+.style{
+	background-color: #aebbc1;
+	justify-content: center;
+}
+.logdiv{
+	width: 450px;
+	height: 550px;
+	background-color: #e8ecef;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	margin-right: 250px;
+	margin-left: 650px;
+	position: absolute;
+}
+.size{
+	font-size:5rem;
+	margin-top:-50px;
+	margin-left: 180px; 
+}
+.icon{
+	font-size:2rem;
+	color:#1238b7;
+}
+.iconn{
+	font-size:2rem;
+	color:#e53f30;
+}
+
+.font{
+	font-family: 'Montserrat', sans-serif; 
+	margin-top: 10px;
+}
+.boxsize{
+	width: 250px;
+	margin-left: 100px;
+	
+}
+.signdiv{
+	width: 600px;
+	height: 600px;
+	background-color:#c4beb2;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	margin-right: 250px;
+	margin-left: 60px;
+	position: absolute;
+
+}
+.sizee{
+	font-size:5rem;
+	margin-top:-80px;
+	margin-left: 200px; 
+}
+.sicon{
+	font-size:1.2rem;
+}
+
+.box{
+	margin-top: 5px;
+	margin-left: 33px;
+	width: 405px;
+}
+.gap{
+	margin-bottom: 10px;
+}
+
+

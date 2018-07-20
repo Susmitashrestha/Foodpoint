@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html >
+  <head>
+  
+    <title>Signup</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!--Javascript-->
+            <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    
+
+    <link href="../CSS/stylee.css" rel="stylesheet">
+
+  </head>
+
+
+  	<body>
+  		<div class="card">
+  		<img class="card-img" src="../images/joinus.jpg">
+
+  		
+		  		<div class="card-img-overlay">
+		  			 <nav class="navbar navbar-expand-sm  mb-3 ">
+					        <div class="container">
+					          <a class="navbar-brand head" href="Homepage.html">FOODPOINT</a>
+                  </div>
+            </nav>
+            <div class="signdiv">
+	            <i class="fas fa-user-plus sizee"><hr/></i><br/>
+	            <a href="#" class="btn  btn-social btn-primary  btn-facebook mt-4 ml-5">
+	            <i class="fab fa-facebook sicon"> Signup with facebook</i>
+	            </a><br/>
+	            <a href="#" class="btn  btn-social btn-danger btn-google-plus mt-2 ml-5">
+	            <i class="fab fa-google-plus-square sicon"> Signup with Google</i>
+	            </a><hr/>
+            
+
+            <form action="#" onsubmit="return validation()">
+          		<div class="form-row">
+          		<label class="ml-4 mr-1 font"><strong>FullName</strong></label>
+	            	<div class="col-xs-3">
+	            		<input type="text" class="form-control" placeholder="First name" required>
+	            	</div>
+	            	<div class="col-xs-3">
+	              	 <input type="text" class="form-control"  placeholder="Last name">
+	            	</div>
+          		</div>
+
+
+          		<div class="form-row">
+					<label class="ml-4 font"> <strong>Email</strong> </label>
+					<div class="col-xs-3">
+					<input type="text" name="user" id="emailid" class="form-control box" placeholder="example@xyz.com" autocomplete="off" required>
+					<span id="emailids" class="text-danger"> </span>
+				</div>
+				</div>
+
+				<div class="form-row gap ">
+                <label class="ml-4 font mt-3"><strong>Username</strong></label>
+	                <div class="col-xs-3">
+	                  <input type="text" class=" form-control mt-2" id="username" placeholder="Enter username"  autocomplete="off" required 
+	                  ><span id="usernameid" class="text-danger "> </span>
+	                </div>
+              	</div>
+
+
+              	<div class="form-row gap">
+                <label class="ml-4 font mt-2 mr-1"><strong>Password</strong></label>
+	                <div class="col-xs-3">
+	                  <input type="password" class=" form-control " id="password" placeholder="Password" autocomplete="off" required>
+	                  <span id="passwords" class="text-danger "> </span>
+	                </div>
+              	</div>
+
+
+              	<input type="submit" name="submit" value="Create Account" class="btn btn-danger btn-block mt-2">
+       		</form>
+
+       		
+            <p class="ml-5 mt-3">Already have an account? | <a href="Login page.html">Sign in</a>
+        </p>
+       		 </div>
+        </div>
+
+
+        <script type="text/javascript">
+		
+		function validation(){
+
+			
+			var email = document.getElementById('emailid').value;
+			var user = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+
+			if(email.indexOf('@') <= 0){
+				document.getElementById('emailids').innerHTML = " ** please fill the email id in proper format @ ";
+				return false;
+			}
+
+				
+
+			if((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){
+
+				document.getElementById('emailids').innerHTML = " ** please fill the email id in proper format . ";
+				return false;
+			} 
+
+
+			if(( user.length < 3) || (user.length > 20)){
+        document.getElementById('usernameid').innerHTML = " ** please fill the username between 3 and 20";
+        return false;
+      }
+
+      if(!isNaN(user)){
+        document.getElementById('usernameid').innerHTML = " ** please enter character";
+        return false;
+      }
+
+
+      
+
+      if((password.length < 5) || (password.length > 20)){
+        document.getElementById('passwords').innerHTML = " ** please fill the password between 5 and 20";
+        return false;
+      }
+    }
+      </script>  
+    </body>
+</html>
